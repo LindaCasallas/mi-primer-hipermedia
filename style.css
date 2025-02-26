@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+    text-shadow: 2px 2px red;
+}
+
+marquee {
+    font-size: 20px;
+    color: cyan;
+    font-weight: bold;
+}
+
+a {
+    font-size: 20px;
+    color: magenta;
+    font-weight: bold;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid yellow;
+}
