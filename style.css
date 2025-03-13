@@ -22,3 +22,29 @@ a {
     font-weight: bold;
 }
 
+#piloto {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#snoopybutton {
+    background-color: lime;
+    color: black;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px red;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#snoopybutton:hover {
+    background-color: yellow;
+    color: black;
+}
