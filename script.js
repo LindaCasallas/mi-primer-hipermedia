@@ -33,3 +33,10 @@ document.getElementById("snoopybutton").addEventListener("click", function() {
 
     moveImage();
 });
+
+var clickSound = new Audio('assets/click.wav'); // Carga el sonido
+
+document.getElementById("snoopybutton").addEventListener("click", function () {
+    clickSound.play(); // Reproduce el sonido cuando se hace clic
+});
+
