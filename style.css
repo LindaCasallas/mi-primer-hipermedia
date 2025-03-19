@@ -48,3 +48,7 @@ a {
     background-color: yellow;
     color: black;
 }
+
+body {
+    cursor: url('assets/cursor.cur'), auto;
+}
