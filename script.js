@@ -65,7 +65,7 @@ document.getElementById("piloto").addEventListener("click", function () {
     if (clickCount === 2) {
         // Segundo toque: Aparece el segundo cuadro de texto
         let fact2 = document.createElement("div");
-        fact2.innerHTML = "El video Wannabe de Spice Girls fue grabado en una sola toma 🎬
+        fact2.innerHTML = "El video Wannabe de Spice Girls fue grabado en una sola toma
 El icónico video musical, donde las chicas corren por un lujoso hotel en Londres, parece una toma continua, pero en realidad tiene algunos cortes sutiles. Fue grabado en una sola noche y el equipo de producción al principio no quería lanzarlo porque parecía muy desordenado.";
         fact2.classList.add("wannabe-text-box","mostrar");
         fact2.id = "fact2";
