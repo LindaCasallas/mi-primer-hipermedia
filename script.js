@@ -40,3 +40,11 @@ document.getElementById("snoopybutton").addEventListener("click", function () {
     clickSound.play(); // Reproduce el sonido cuando se hace clic
 });
 
+// 1️⃣ Cargar el sonido de Snoopy
+var snoopySound = new Audio('assets/clicksnoopy.wav'); // Ruta del sonido
+
+// 2️⃣ Detectar cuando tocan a Snoopy piloto
+document.getElementById("piloto").addEventListener("click", function () {
+    snoopySound.play(); // Reproduce el sonido
+});
+
