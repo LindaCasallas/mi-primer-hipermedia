@@ -72,3 +72,19 @@ body {
     width: 200px; 
     height: 200px;
 }
+
+/* Nuevo estilo para organizar los elementos */
+#content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
