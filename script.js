@@ -43,14 +43,11 @@ document.getElementById("snoopybutton").addEventListener("click", function () {
 // 1️⃣ Cargar el sonido de Snoopy
 var snoopySound = new Audio('assets/clicksnoopy.wav'); // Ruta del sonido
 
-// 2️⃣ Detectar cuando tocan a Snoopy piloto
-document.getElementById("piloto").addEventListener("click", function () {
-    snoopySound.play(); // Reproduce el sonido
-});
-
 var clickCount = 0; // Contador de clics en Snoopy piloto
 
+// Unificar los eventos click en piloto
 document.getElementById("piloto").addEventListener("click", function () {
+    snoopySound.play(); // Reproduce el sonido
     clickCount++; // Aumenta el contador de clics
 
     if (clickCount === 1) {
@@ -65,14 +62,13 @@ document.getElementById("piloto").addEventListener("click", function () {
     if (clickCount === 2) {
         // Segundo toque: Aparece el segundo cuadro de texto
         let fact2 = document.createElement("div");
-        fact2.innerHTML = "El video Wannabe de Spice Girls fue grabado en una sola toma
-El icónico video musical, donde las chicas corren por un lujoso hotel en Londres, parece una toma continua, pero en realidad tiene algunos cortes sutiles. Fue grabado en una sola noche y el equipo de producción al principio no quería lanzarlo porque parecía muy desordenado.";
+        fact2.innerHTML = "El video Wannabe de Spice Girls fue grabado en una sola toma. El icónico video musical, donde las chicas corren por un lujoso hotel en Londres, parece una toma continua, pero en realidad tiene algunos cortes sutiles. Fue grabado en una sola noche y el equipo de producción al principio no quería lanzarlo porque parecía muy desordenado.";
         fact2.classList.add("wannabe-text-box","mostrar");
         fact2.id = "fact2";
         document.body.appendChild(fact2);
     }
-});
 
-if (clickCount === 3) {  
-    document.getElementById("snoopydance").style.display = "block"; // Muestra el GIF  
-}
+    if (clickCount === 3) {  
+        document.getElementById("snoopydance").style.display = "block"; // Muestra el GIF  
+    }
+});
