@@ -1,35 +1,36 @@
-body {
-    background-color: black;
-    color: lime;
-    font-family: "Comic Sans MS", cursive;
-    text-align: center;
-}
-
-h1 {
+<!DOCTYPE html>
+<html lang="es">olor: black;
+<head>lor: lime;
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="iconosnoopy.ico">
+</head>sor: url('assets/cursor.cur'), auto;
+<body>
+    <h1>🎉 Bienvenido a mi página noventera 🎉</h1>
+    <marquee>🌟 ¡Mira cómo este texto se mueve! 🌟</marquee>
     color: yellow;
-    text-shadow: 2px 2px red;
+    <p class="verde">Tributo bonito a los sitios web de los 90s. ¡Deja que te guíe la nostalgia!</p>
 }
-
+    <img src="https://media.giphy.com/media/J93sVmfYBtsRi/giphy.gif">
 marquee {
-    font-size: 20px;
-    color: cyan;
-    font-weight: bold;
+    <br><br>e: 20px;
+    <p><a href="https://www.youtube.com/watch?v=gJLIiF15wjQ" target="_blank">Haz clic aquí para ver algo genial</a></p>
+    <br><br>ght: bold;
 }
-
-a {
-    font-size: 20px;
+    <button id="snoopybutton">Haz click para ver a Snoopy</button>
+    <img id="piloto" src="piloto.png" style="display:none; position:absolute; opacity:0; transition: opacity 1s;">
+    <script src="script.js"></script>
     color: magenta;
-    font-weight: bold;
-}
-
-#piloto {
-    width: 150px;
-    height: auto;
-    position: absolute;
+    <div id="content-container">
+        <div class="text-container">
+            <div id="fact1" class="snoopy-text-box"></div>
+            <div id="fact2" class="wannabe-text-box"></div>
+        </div>px;
+        <img id="snoopydance" src="assets/snoopydance.gif" style="display:none;">
+    </div>on: absolute;
     display: none;
-    opacity: 0;
-    transition: opacity 1s;
-}
+    <br><br> 0;
+</body>nsition: opacity 1s;
+</html>
 
 #snoopybutton {
     background-color: lime;
@@ -47,10 +48,6 @@ a {
 #snoopybutton:hover {
     background-color: yellow;
     color: black;
-}
-
-body {
-    cursor: url('assets/cursor.cur'), auto;
 }
 
 .snoopy-text-box, .wannabe-text-box {
