@@ -52,3 +52,18 @@ a {
 body {
     cursor: url('assets/cursor.cur'), auto;
 }
+
+.snoopy-text-box, .wannabe-text-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 10px;
+}
+
+#snoopydance {
+    display: none;
+    width: 200px; 
+    height: 200px;
+}

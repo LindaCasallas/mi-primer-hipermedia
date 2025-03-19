@@ -48,3 +48,31 @@ document.getElementById("piloto").addEventListener("click", function () {
     snoopySound.play(); // Reproduce el sonido
 });
 
+var clickCount = 0; // Contador de clics en Snoopy piloto
+
+document.getElementById("piloto").addEventListener("click", function () {
+    clickCount++; // Aumenta el contador de clics
+
+    if (clickCount === 1) {
+        // Primer toque: Aparece el primer cuadro de texto
+        let fact1 = document.createElement("div");
+        fact1.innerHTML = "Snoopy es uno de los personajes más icónicos de la cultura pop y la mascota estrella de la historieta Peanuts, creada por Charles M. Schulz en 1950. Es un beagle soñador, carismático y lleno de imaginación, que ha conquistado generaciones con su personalidad divertida y sus fantasías de piloto de la Primera Guerra Mundial, escritor y otras aventuras.";
+        fact1.classList.add("snoopy-text-box","mostrar");
+        fact1.id = "fact1";
+        document.body.appendChild(fact1);
+    }
+
+    if (clickCount === 2) {
+        // Segundo toque: Aparece el segundo cuadro de texto
+        let fact2 = document.createElement("div");
+        fact2.innerHTML = "El video Wannabe de Spice Girls fue grabado en una sola toma 🎬
+El icónico video musical, donde las chicas corren por un lujoso hotel en Londres, parece una toma continua, pero en realidad tiene algunos cortes sutiles. Fue grabado en una sola noche y el equipo de producción al principio no quería lanzarlo porque parecía muy desordenado.";
+        fact2.classList.add("wannabe-text-box","mostrar");
+        fact2.id = "fact2";
+        document.body.appendChild(fact2);
+    }
+});
+
+if (clickCount === 3) {  
+    document.getElementById("snoopydance").style.display = "block"; // Muestra el GIF  
+}
