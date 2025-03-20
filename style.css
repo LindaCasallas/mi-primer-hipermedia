@@ -53,18 +53,18 @@ body {
     cursor: url('assets/cursor.cur'), auto;
 }
 
-.snoopy-text-box, .wannabe-text-box {
+.snoopy-text-box, .wannabe-text-box, .fact-text-box {
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 5px;
     width: 250px;
     margin: 10px;
-    display: none; /* Asegúrate de que inicialmente estén ocultos */
+    display: none;
 }
 
 .mostrar {
-    display: block; /* Clase para mostrar los cuadros de texto */
+    display: block;
 }
 
 #snoopydance {
@@ -73,18 +73,17 @@ body {
     height: 200px;
 }
 
-/* Nuevo estilo para organizar los elementos */
 #content-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 .text-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    align-items: center;
 }

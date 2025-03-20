@@ -69,6 +69,42 @@ document.getElementById("piloto").addEventListener("click", function () {
     }
 
     if (clickCount === 3) {
+        // Tercer toque: Aparece el tercer cuadro de texto
+        let fact3 = document.createElement("div");
+        fact3.innerHTML = "El primer sitio web del mundo fue creado por Tim Berners-Lee en 1991. Era una simple página de texto con enlaces a otros documentos y explicaba cómo funcionaba la World Wide Web.";
+        fact3.classList.add("fact-text-box", "mostrar");
+        fact3.id = "fact3";
+        document.body.appendChild(fact3);
+    }
+
+    if (clickCount === 4) {
+        // Cuarto toque: Aparece el cuarto cuadro de texto
+        let fact4 = document.createElement("div");
+        fact4.innerHTML = "El Tamagotchi, una mascota virtual, fue uno de los juguetes más populares de los años 90. Fue creado en Japón y vendió más de 76 millones de unidades en todo el mundo.";
+        fact4.classList.add("fact-text-box", "mostrar");
+        fact4.id = "fact4";
+        document.body.appendChild(fact4);
+    }
+
+    if (clickCount === 5) {
+        // Quinto toque: Aparece el quinto cuadro de texto
+        let fact5 = document.createElement("div");
+        fact5.innerHTML = "La serie de televisión Friends se estrenó en 1994 y se convirtió en un fenómeno cultural. Sus personajes y frases se volvieron icónicos y la serie sigue siendo popular hasta hoy.";
+        fact5.classList.add("fact-text-box", "mostrar");
+        fact5.id = "fact5";
+        document.body.appendChild(fact5);
+    }
+
+    if (clickCount === 6) {
+        // Sexto toque: Aparece el sexto cuadro de texto
+        let fact6 = document.createElement("div");
+        fact6.innerHTML = "El GIF animado, un formato de imagen que soporta animaciones, se popularizó en los años 90 y sigue siendo ampliamente utilizado en internet hoy en día.";
+        fact6.classList.add("fact-text-box", "mostrar");
+        fact6.id = "fact6";
+        document.body.appendChild(fact6);
+    }
+
+    if (clickCount === 7) {
         document.getElementById("snoopydance").style.display = "block"; // Muestra el GIF
     }
 });
