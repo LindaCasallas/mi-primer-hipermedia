@@ -47,7 +47,7 @@ var clickCount = 0; // Contador de clics en Snoopy piloto
 
 // Unificar los eventos click en piloto
 document.getElementById("piloto").addEventListener("click", function () {
-    snoopySound.play(); // Reproduce el sonido
+    snoopySound.play(); // Reproduce el sonido cada vez que se hace clic
     clickCount++; // Aumenta el contador de clics
 
     if (clickCount === 1) {
